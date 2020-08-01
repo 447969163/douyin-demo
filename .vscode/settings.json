@@ -1,0 +1,7 @@
+{
+    "less.compile": {
+        "compress": false,
+        "sourceMap": false,
+        "out": "../css/", // less 放在less文件夹下，less文件夹和css文件夹同级，
+    }
+}

@@ -1,0 +1,110 @@
+@import 'common';
+@number:50;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+}
+// 视频区域 css
+.video {
+    display: flex;
+    align-items: center;
+    width: 15rem;
+    background-color: #000000;
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
+// 视频信息区域 css
+.info {
+    position: fixed;
+    bottom: 50rem/@number;
+    width: 15rem;
+    height: 200rem/@number;
+    .name {
+        position: absolute;
+        top: 10rem/@number;
+        left: 30rem/@number;
+        width: 600rem/@number;
+        line-height: 40rem/@number;
+        color: #FFFFFF;
+        font-size: 30rem/@number;
+    }
+    .name::before {
+        content: "@";
+        margin-right: 5rem/@number;
+    }
+    .passtime {
+        position: absolute;
+        top: 60rem/@number;
+        left: 30rem/@number;
+        width: 600rem/@number;
+        height: 30rem/@number;
+        color: #FFFFFF;
+        line-height: 30rem/@number;
+        font-size: 25rem/@number;
+        overflow: hidden;
+    }
+    .title {
+        position: absolute;
+        top: 110rem/@number;
+        left: 30rem/@number;
+        right: 30rem/@number;
+        line-height: 40rem/@number;
+        color: #FFFFFF;
+        font-size: 30rem/@number;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+}
+// 用户操作区域 css
+.controll {
+    position: fixed;
+    bottom: 300rem/@number;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    right: 30rem/@number;
+    width: 80rem/@number;
+    height: 450rem/@number;
+    .avatar, .like, .share {
+        width: 100%;
+        > img {
+            width: 100%;
+        }
+    }
+    .avatar {
+        padding: 5rem/@number;
+        height: 80rem/@number;
+        border-radius: 50%;
+        border: 5rem/@number solid #e0e0e0;
+    }
+    .avatar > img {
+        border-radius: 50%;
+    }
+    .like {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .like > img:nth-of-type(2) {
+        display: none;
+    }
+    .like > span {
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
